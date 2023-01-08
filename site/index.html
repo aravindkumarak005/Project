@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello World</title>
-</head>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YU Learn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+	</head>
 <body>
-	<p>Hello World</p>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg">
+						<div id="logo-img" alt="logo image"></div>
+					</a>
+
+					<div class="navbar-brand">
+						<a href="index.html"><h1>YU Learn</h1></a>
+						<P>
+							<img src="images/book.png" width=20 alt="book logo">
+							<span>Uniting what's next in STEM!</span>
+						</P>
+					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+					 <li>
+					   <a href="HTMLdoc.html">HTML</a>
+					 </li>
+					 <li>
+					   <a href="#">CSS</a>
+					 </li>
+					 <li>
+					   <a href="#">JS</a>
+					 </li>
+					 <li>
+						<a href="#">Anout Us</a>
+					  </li>
+				   </ul><!-- #nav-list -->
+				 </div><!-- .collapse .navbar-collapse -->
+
+			</div>
+		</nav>
+	</header>
+
+	<div id="main-content" class="container">
+
+		  <video id="background-video" autoplay muted loop>
+			<source src="videos/app.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video>
+
+
+		<div id="home-tiles" class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+			  <a href="Intro.html"><div id="intro-tile"><span>Introduction to Computer Programming</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+			  <a href="HTMLdoc.html"><div id="html-tile"><span>HTML</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="css.html"><div id="css-tile"><span>CSS</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="js.html"><div id="js-tile"><span>JS</span></div></a>
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<a target="_blank" href="https://codepen.io/dweinz/pen/GdMbPz"><div id="codepen-tile"><span>CODEPEN</span></div></a>
+			</div>
+		</div><!-- End of #home-tiles -->
+		
+	</div>
+
+	<footer class="panel-footer">
+		<div class="container">
+		  <div class="row">
+			<section id="yunex" class="col-sm-4">
+			  <span>Yunex Traffic</span><br>
+			  <hr class="visible-xs"> <!--Horizontal Rule-->
+			</section>
+			<section id="address" class="col-sm-4">
+			  <span>Address:</span><br>
+			  Sopers Lane,<br>
+			  Poole, Dorset,<br>
+			  United Kingdom, BH17 7ER.
+			  <hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+			  <p>"Uniting what's next in traffic!"</p>
+			</section>
+		  </div>
+		  <div class="text-center">&copy; Copyright Yunex Traffic 2023</div>
+		</div>
+	</footer>
+
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

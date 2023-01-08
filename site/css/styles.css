@@ -1,0 +1,328 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #E4EDED;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+  background-color: #527a7a;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img{
+  background: url("https://www.yunextraffic.com/wp-content/themes/yunex/public/images/yunex.56a477.svg") no-repeat;
+   width: 150px;
+  height: 50px;
+  margin: 25px 15px 25px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #E4EDED;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p {
+  color: #E4EDED;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 10px;
+}
+
+.navbar-brand p span {
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #E4EDED;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: orangered;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid orangered;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #codepen-tile{
+    height: 250px;
+    width: 70%;
+    position:relative;
+    border: 2px solid #527a7a;
+    overflow: hidden;
+    margin: 25px 15px 25px 175px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 90px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  #codepen-tile{
+    height: 250px;
+    width: 70%;
+    position:relative;
+    border: 2px solid #527a7a;
+    overflow: hidden;
+    margin: 25px 15px 25px 175px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 90px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  #codepen-tile{
+    height: 250px;
+    width: 70%;
+    position:relative;
+    border: 2px solid #527a7a;
+    overflow: hidden;
+    margin: 25px 15px 25px 75px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 90px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  #codepen-tile{
+    height: 250px;
+    width: 70%;
+    position:relative;
+    border: 2px solid #527a7a;
+    overflow: hidden;
+    margin: 25px 15px 25px 75px;
+  }
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr{
+    width: 50%;
+  }
+    /* End Footer */
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .5;
+}
+
+#intro-tile, #html-tile, #css-tile, #js-tile {
+  height: 500px;
+  width: 100%;
+  /*margin-bottom: 20px;*/
+  position: relative;
+  border: 2px solid #527a7a;
+  overflow: hidden;
+  margin: 25px 15px 25px 0;
+}
+
+#codepen-tile{
+  height: 250px;
+  width: 70%;
+  position:relative;
+  border: 2px solid #527a7a;
+  overflow: hidden;
+  /*margin: 25px 15px 25px 175px;*/
+}
+
+#intro-tile:hover, #html-tile:hover, #css-tile:hover, #js-tile:hover, #codepen-tile:hover{
+  box-shadow: 0 10px 15px 10px #527a7a;
+}
+
+#intro-tile {
+  background: url('../images/intro.png') no-repeat;
+  background-position: center;
+}
+#html-tile {
+  background: url('../images/html.png') no-repeat;
+  background-position: center;
+}
+#css-tile {
+  background: url('../images/css.png') no-repeat;
+  background-position: center;
+}
+#js-tile {
+  background: url('../images/js.png') no-repeat;
+  background-position: center;
+}
+
+#codepen-tile{
+  background: url('../images/codepen.jpg') no-repeat;
+  background-position: center;
+  opacity: .8;
+}
+
+#intro-tile span, #html-tile span, #css-tile span, #js-tile span, #codepen-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: skyblue;
+  color: black;
+  opacity: .8;
+}
+
+/****************************************/
+
+#yunex {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+#testimonials {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+/* FOOTER */
+.panel-footer {
+  color: #E4EDED;
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#yunex > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/***********************HTMdoc.html*************************/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Clear floats after the columns */
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.firstspan{
+  padding-left: 10px;
+  background: url("images/ada_lovelace_color.png");
+}
+
+table, th, td{
+  border: 1px solid green;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
